@@ -28,6 +28,9 @@ app.use((req, res, next) => {
     }
     next()
 })
+app.get("/", async (req,res)=>{
+    return res.status(200).send({"message": "reached"});
+})
 
 app.post("/unlock", async (req, res) => {
     const authorization_header = req.headers["authorization"];
