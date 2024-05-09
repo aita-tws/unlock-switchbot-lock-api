@@ -20,8 +20,7 @@ const get_device_id = async (room_number)=>{
  * @return {Promise<Response>}
  */
 const unlock_device = (device_id)=>{
-    console.log("24",device_id)
-    //return switchbot_api.execute_command("unlock", device_id, "{}")
+    return switchbot_api.execute_command("unlock", device_id, "{}")
 }
 
 /**
