@@ -1,4 +1,4 @@
-FROM node:20.6.0
+FROM node:20.18.1
 WORKDIR /app
 
 ENV TINI_VERSION v0.19.0
